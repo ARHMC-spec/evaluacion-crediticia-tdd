@@ -1,0 +1,19 @@
+{
+  "name": "evaluacion-crediticia-tdd",
+  "version": "1.0.0",
+  "description": "Proyecto TDD evaluacion crediticia",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
