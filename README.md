@@ -47,3 +47,18 @@ Respuesta:
 ### Ver clientes guardados
 
 GET http://localhost:3000/clientes
+
+## 🚀 Cómo ejecutar el proyecto
+
+### 1. Instalar dependencias
+npm install
+
+### 2. Ejecutar pruebas
+npm test
+
+### 3. Ejecutar app
+node src/app.js
+
+### 4. Docker
+docker build -t evaluacion-crediticia .
+docker run -p 3001:3000 evaluacion-crediticia
