@@ -1,64 +1,39 @@
-# Evaluación Crediticia con TDD
+# 📊 Evaluación Crediticia con TDD
 
-## Descripción
-Sistema que evalúa si un cliente puede recibir un crédito en función de sus ingresos y deudas.
+## 📌 Descripción
+Aplicación web desarrollada en Node.js que permite evaluar si un cliente es apto para recibir un crédito en base a su edad, ingresos y nivel de deudas.
 
-## Tecnologías usadas
+El proyecto implementa el enfoque de Desarrollo Guiado por Pruebas (TDD), incluye pruebas unitarias, uso de ORM con Sequelize y despliegue mediante Docker.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
 - Node.js
 - Express
-- Jest
-- Sequelize
-- SQLite
+- Jest (Pruebas unitarias)
+- Sequelize (ORM)
+- SQLite (Base de datos)
+- Docker
 
-## Cómo ejecutar el proyecto
+---
 
-1. Instalar dependencias:
+## 🧠 Lógica de evaluación
 
-npm install
+Un cliente será:
 
-2. Ejecutar pruebas:
+- ❌ RECHAZADO si:
+  - Es menor de edad
+  - Sus ingresos son menores a 1000
+  - Sus deudas superan el 50% de sus ingresos
 
-npm test
+- ✅ APROBADO en caso contrario
 
-3. Ejecutar servidor:
-
-node src/app.js
-
-## Uso de la API
-
-### Evaluar cliente
-
-POST http://localhost:3000/evaluar
-
-Ejemplo:
-
-{
-  "edad": 30,
-  "ingresos": 3000,
-  "deudas": 200
-}
-
-Respuesta:
-
-{
-  "resultado": "APROBADO"
-}
-
-### Ver clientes guardados
-
-GET http://localhost:3000/clientes
+---
 
 ## 🚀 Cómo ejecutar el proyecto
 
-### 1. Instalar dependencias
-npm install
-
-### 2. Ejecutar pruebas
-npm test
-
-### 3. Ejecutar app
-node src/app.js
-
-### 4. Docker
-docker build -t evaluacion-crediticia .
-docker run -p 3001:3000 evaluacion-crediticia
+### 1. Clonar repositorio
+```bash
+git clone https://github.com/TU-USUARIO/evaluacion-crediticia-tdd
+cd evaluacion-crediticia-tdd
