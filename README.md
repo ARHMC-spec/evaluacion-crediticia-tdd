@@ -1,13 +1,13 @@
-# 📊 Evaluación Crediticia con TDD
+#  Evaluación Crediticia con TDD
 
-## 📌 Descripción
+## Descripción
 Aplicación web desarrollada en Node.js que permite evaluar si un cliente es apto para recibir un crédito en base a su edad, ingresos y nivel de deudas.
 
 El proyecto implementa el enfoque de Desarrollo Guiado por Pruebas (TDD), incluye pruebas unitarias, uso de ORM con Sequelize y despliegue mediante Docker.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Node.js
 - Express
@@ -18,7 +18,7 @@ El proyecto implementa el enfoque de Desarrollo Guiado por Pruebas (TDD), incluy
 
 ---
 
-## 🧠 Lógica de evaluación
+## Lógica de evaluación
 
 Un cliente será:
 
@@ -31,7 +31,7 @@ Un cliente será:
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 
 ### 1. Clonar repositorio
 ```bash
